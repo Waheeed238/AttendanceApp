@@ -1,0 +1,79 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light grey background for body */
+    color: #000; /* Black text color */
+  }
+  
+  /* Home Container Styles */
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    padding: 20px;
+    background-color: #fff; /* White background for the home container */
+    text-align: center;
+  }
+  
+  .home-container h1 {
+    font-size: 2.5em;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .home-container p {
+    font-size: 1.2em;
+    color: #333; /* Dark grey color for paragraph text */
+    margin-bottom: 40px;
+    max-width: 600px;
+    line-height: 1.5;
+  }
+  
+  /* Links Section */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Button Styles */
+  .link-button {
+    text-decoration: none;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link-button:hover {
+    background-color: #444; /* Darker grey on hover */
+  }
+  
+  /* Media Queries for smaller screens */
+  @media (max-width: 768px) {
+    .home-container h1 {
+      font-size: 2em; /* Slightly smaller title */
+    }
+  
+    .home-container p {
+      font-size: 1em;
+    }
+  
+    .link-button {
+      font-size: 0.9em;
+    }
+  }
+  
